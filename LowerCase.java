@@ -21,4 +21,4 @@ public class LowerCase {
         return ans;
     }
 }
-//done
+//done  we can 
