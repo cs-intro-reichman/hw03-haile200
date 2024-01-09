@@ -39,8 +39,8 @@ public class Calendar1 {
 	 // Side effects: changes the static variables dayOfMonth, month, year, dayOfWeek, nDaysInMonth.
 	 private static void advance() {
 		int month =nDaysInMonth(dayOfMonth, year);
-		for (int i = dayOfMonth; i <=month ; i++) {
-			if(i+6%7==0)
+		//for (int i = dayOfMonth; i <=month ; i++) {
+		//	if(i+6%7==0)
 			
 	 } 
 		 
