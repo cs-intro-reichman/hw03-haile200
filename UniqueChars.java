@@ -1,9 +1,8 @@
 /** String processing exercise 2. */
-public class UniqueChars {
+public class uniquechars {
     public static void main(String[] args) {  
         String str = args[0];
-        String ans = uniqueChars(str);
-        System.out.println(ans);
+        System.out.println(uniqueChars(str));
     }
 
 
