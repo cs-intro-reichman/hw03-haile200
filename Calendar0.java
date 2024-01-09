@@ -6,7 +6,7 @@ public class Calendar0 {
 	
 	// Gets a year (command-line argument), and tests the functions isLeapYear and nDaysInMonth.
 	public static void main(String args[]) {
-		int year = Integer.parseInt(args[0]);
+		int year = 2000;///Integer.parseInt(args[0]);
 		isLeapYearTest(year);
 		nDaysInMonthTest(year);
 	}
@@ -23,7 +23,7 @@ public class Calendar0 {
 	// Tests the nDaysInMonth function.
 	private static void nDaysInMonthTest(int year) {
 		for (int i = 1; i <= 12; i++) {
-			System.out.println("month " +i+ " has "+nDaysInMonth(i, year)+" days");
+			System.out.println("Month " +i+ " has "+nDaysInMonth(i, year)+" days");
 			
 		}
 	
