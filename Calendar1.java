@@ -17,18 +17,19 @@ public class Calendar1 {
 		// Advances the date and the day-of-the-week from 1/1/1900 till 31/12/1999, inclusive.
 	    // Prints each date dd/mm/yyyy in a separate line. If the day is a Sunday, prints "Sunday".
 	    // The following variable, used for debugging purposes, counts how many days were advanced so far.
+		
 	    int debugDaysCounter = 0; 
 	    //// Write the necessary initialization code, and replace the condition
 	    //// of the while loop with the necessary condition 
-	 	while (true) {
+	 	//while (true) {
 	 		//// Write the body of the while 		
 	 		advance();
 	 		debugDaysCounter++;
 	 		//// If you want to stop the loop after n days, replace the condition of the
 	 		//// if statement with the condition (debugDaysCounter == n)
-	 		if (false) { 
-	 			break;
-	 		}
+	 	//	if (debugDaysCounter == n) { 
+	 	//		break;
+	 	//	}
         }
 	 	//// Write the necessary ending code here
 	 }
@@ -37,7 +38,10 @@ public class Calendar1 {
 	 // If the month changes, sets the number of days in this month.
 	 // Side effects: changes the static variables dayOfMonth, month, year, dayOfWeek, nDaysInMonth.
 	 private static void advance() {
-		// Replace this comment with your code
+		int month =nDaysInMonth(dayOfMonth, year);
+		for (int i = dayOfMonth; i <=month ; i++) {
+			if(i+6%7==0)
+			
 	 } 
 		 
     // Returns true if the given year is a leap year, false otherwise.
@@ -84,8 +88,7 @@ public class Calendar1 {
 			case 12:
 				return 31;			
 		}
-		return year;
-		
+		return 0;
 	}
 }
 
