@@ -19,32 +19,42 @@ public class Calendar {
 	    //// Write the necessary initialization code, and replace the condition
 	    //// of the while loop with the necessary condition 
         int givenYear = Integer.parseInt(args[0]);
+		year=givenYear;
         while (year < givenYear) {
             advance();
         }
 
         // Print the calendar of the given year
         while (year == givenYear) {
-            // Print the date
-            System.out.println(dayOfMonth + "/" + month + "/" + year);
-
             advance();
         }
     }
 
     private static void advance() {
-        dayOfMonth++;
+		String whereIsSunday ="Sunday";
+		if (dayOfWeek == 0 || dayOfWeek == 7) {
+			System.out.println(dayOfMonth +"/"+month +"/"+ year+ " "+ whereIsSunday);
+			if (dayOfMonth==1){
+			totalSundaysOnFirst++;
+		}
+		} else{
+			System.out.println(dayOfMonth +"/"+month+"/"+ year);
+		}
 
-        if (dayOfMonth > nDaysInMonth(month, year)) {
-            dayOfMonth = 1;
-            month++;
+		dayOfMonth++;
+		dayOfWeek = (dayOfWeek + 2) % 7;
 
-            if (month > 12) {
-                month = 1;
-                year++;
-            }
-        }
-    }
+		if (dayOfMonth > nDaysInMonth(month, year)) {
+			dayOfMonth = 1;
+			month++;
+
+			if (month > 12) {
+				month = 1;
+				year++;
+			}
+		}
+		
+	}
 
 		 
     // Returns true if the given year is a leap year, false otherwise.
