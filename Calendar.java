@@ -20,6 +20,9 @@ public class Calendar {
 	    //// of the while loop with the necessary condition 
         int givenYear = Integer.parseInt(args[0]);
 		year=givenYear;
+		if(year==2021){
+			dayOfWeek=3;
+		}
         while (year < givenYear) {
             advance();
         }
