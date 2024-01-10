@@ -18,7 +18,7 @@ public class Calendar {
 	    // The following variable, used for debugging purposes, counts how many days were advanced so far.
 	    //// Write the necessary initialization code, and replace the condition
 	    //// of the while loop with the necessary condition 
-        int givenYear = Integer.parseInt(args[0]);
+        int givenYear =2022;// Integer.parseInt(args[0]);
 		year=givenYear;
         while (year < givenYear) {
             advance();
