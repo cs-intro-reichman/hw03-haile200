@@ -38,7 +38,7 @@ public class Calendar1 {
 	 // If the month changes, sets the number of days in this month.
 	 // Side effects: changes the static variables dayOfMonth, month, year, dayOfWeek, nDaysInMonth.
 	 private static void advance() {
-		String whereIsSunday ="Sunday";
+		String whereIsSunday ="Sunday"; // #feedback - this variable is not needed, you can have this string directly in the println function.
 		if (dayOfWeek == 0 || dayOfWeek == 7) {
 			System.out.println(dayOfMonth +"/"+month +"/"+ year+ " "+ whereIsSunday);
 			if (dayOfMonth==1){
