@@ -41,7 +41,7 @@ public class Calendar0 {
 	// All the other months have 31 days.
 	public static int nDaysInMonth(int month, int year) {	
 		switch (month) {
-			case 1:
+			case 1: // #feedback - if you want to avoid having many cases, consider having 31 as the default and only handle the other months.
 				return 31;
 		
 			case 2:
