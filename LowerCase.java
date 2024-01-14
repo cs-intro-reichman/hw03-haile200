@@ -15,8 +15,9 @@ public class LowerCase {
             char currentChar = s.charAt(i);
             if (currentChar >= 'A' && currentChar <= 'Z') {
                 ans += (char) (currentChar + 32);
-             }else
-            ans+=s.charAt(i);
+             }
+            else // #feedback - note the indentation here.
+                ans+=s.charAt(i);
         }
         return ans;
     }
